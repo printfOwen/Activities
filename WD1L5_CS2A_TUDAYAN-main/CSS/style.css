@@ -1,0 +1,204 @@
+.stylesheet {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.registration {
+    background-color: rgb(177, 225, 138);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    background-color: rgb(204, 234, 87);
+    padding: 30px; 
+    border-radius: 8px;
+}
+
+.registration input {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+}
+
+.registration button {
+    width: 100%;
+    background-color: yellowgreen;
+    color: white;
+    padding: 11px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.4s ease;
+}
+
+.loginSection {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    background-color: rgb(204, 234, 87);
+    padding: 10px; 
+    border-radius: 8px;
+}
+
+.loginSection input {
+    width: 50%;
+    padding: 9px 10px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.loginSection button {
+    width: 50%;
+    background-color: yellowgreen;
+    color: white;
+    padding: 11px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.4s ease;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.GrocerySection {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    background-color: rgb(204, 234, 87);
+}
+
+.groceryList {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    background-color: rgb(204, 234, 87);
+}
+
+.GrocerySection { 
+    column-count: 2; 
+    column-gap: 30px;
+}
+.GrocerySection h2 {
+    column-span: all;
+}
+.GrocerySection h3 { 
+    break-before: column;
+}
+
+.GrocerySection input { width: 90%; 
+    padding: 10px; 
+    border: 2px solid #03331d; 
+    border-radius: 8px;
+}
+.GrocerySection button { 
+    margin: 6px 3px; 
+    padding: 10px 18px; 
+    background: #03331d; 
+    color: #fff; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer;
+}
+.GrocerySection button:hover {
+    background: #066b3a;
+}
+.GrocerySection button:last-of-type { 
+    background: #b3261e;
+}
+#groceryList {
+    list-style: none;
+    padding: 0; 
+    text-align: left;
+}
+#groceryList li { 
+    background: #fff; 
+    padding: 10px 14px; 
+    margin-bottom: 8px; 
+    border-radius: 8px;
+}
+
+.GrocerySection {
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    column-gap: 30px; width: 70%; 
+    margin: auto;
+}
+.GrocerySection br {
+    display: none;
+}
+.GrocerySection > * {
+    grid-column: 1;
+}
+.GrocerySection h2 { 
+    grid-column: 1 / -1;
+}
+.GrocerySection input, .GrocerySection button {
+    justify-self: center;
+}
+.GrocerySection h3 {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0;
+}
+#groceryList {
+    grid-column: 2;
+    grid-row: 3 / span 6;
+    align-self: start;
+    max-height: 260px;
+    overflow-y: auto;
+    padding: 10px;  
+    border-radius: 10px;
+}

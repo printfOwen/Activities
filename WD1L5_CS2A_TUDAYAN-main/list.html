@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="GrocerySection">
+        <h2>Grocery Items List</h2>
+
+        <label>Item Name</label><br>
+        <input type="text" id="item_name"><br>
+
+        <label>Item Quantity</label><br>
+        <input type="text" id="item_qty"><br>
+
+        <br>
+        <button onclick="logout()">Logout</button>
+        <button onclick="addItem()">Add Item</button>
+        <br>
+        <button onclick="clearList()">Clear List</button>
+
+        <h3>The List</h3>
+        <ul id="groceryList"></ul>
+
+
+    </section>
+    <script src="js/list.js"></script>
+</body>
+</html>
